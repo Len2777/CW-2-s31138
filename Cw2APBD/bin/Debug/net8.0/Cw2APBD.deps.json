@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Cw2APBD/1.0.0": {
+        "runtime": {
+          "Cw2APBD.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cw2APBD/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

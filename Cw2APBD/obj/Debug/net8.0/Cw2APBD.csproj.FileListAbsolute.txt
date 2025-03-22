@@ -1,0 +1,14 @@
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\bin\Debug\net8.0\Cw2APBD.exe
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\bin\Debug\net8.0\Cw2APBD.deps.json
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\bin\Debug\net8.0\Cw2APBD.runtimeconfig.json
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\bin\Debug\net8.0\Cw2APBD.dll
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\bin\Debug\net8.0\Cw2APBD.pdb
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.AssemblyInfoInputs.cache
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.AssemblyInfo.cs
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.csproj.CoreCompileInputs.cache
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.dll
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\refint\Cw2APBD.dll
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.pdb
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.genruntimeconfig.cache
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\ref\Cw2APBD.dll
