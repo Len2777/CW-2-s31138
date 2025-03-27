@@ -2,6 +2,8 @@ namespace Cw2APBD;
 
 public class Containers : IHazardNotifier
 {
+
+    public int tmp = 1;
     public double Kg { get; set; }
     public double Height { get; set; }
     public double Weight { get; set; }
@@ -14,18 +16,20 @@ public class Containers : IHazardNotifier
     public string cargoType { get; set; } = "";
 
 
-    public Containers(double Kg, double Height, double Weight, double Depth, double MaxMassKg, string SerialNumber,
-        string Type, int NumberContainer,
-        string cargoType)
+    public Containers(double Kg, double Height, double Weight, double Depth, double MaxMassKg, string SerialNumber, string cargoType)
     {
+        
+       
+        string[] parts = SerialNumber.Split('-');  
+        NumberContainer = int.Parse(parts[2]);
+
+        NumberContainer = tmp++;
         this.Kg = Kg;
         this.Height = Height;
         this.Weight = Weight;
         this.Depth = Depth;
         this.MaxMassKg = MaxMassKg;
         this.SerialNumber = SerialNumber;
-        this.NumberContainer = NumberContainer;
-        this.Type = Type;
         this.cargoType = cargoType;
     }
 
@@ -38,6 +42,7 @@ public class Containers : IHazardNotifier
         MaxMassKg = 0;
         NumberContainer = 0;
         SerialNumber = "";
+        Console.WriteLine("elemety usunięnte");
     }
 
     public double AddMass(double mass, Containers containers)
@@ -48,6 +53,18 @@ public class Containers : IHazardNotifier
         double ninetyPercentOfMaxMass = MaxMassKg - newMass;
         double ninetyFivePercentOfMaxMass = MaxMassKg - newMass * 0.5;
 
+       
+  
+        String[] spearator = { "-" }; 
+        int count = 3; 
+  
+       
+        String[] strlist = SerialNumber.Split(spearator, count, 
+            StringSplitOptions.RemoveEmptyEntries);
+        
+        Type = strlist[1];
+        
+        
         if (containers.cargoType == "Save" & containers.Type == "L")
         {
             try
@@ -109,12 +126,17 @@ public class Containers : IHazardNotifier
 
     public void ColdContainer(Containers containers)
     {
+
+        double [] tmp = new double[10];
+        string[] parts = SerialNumber.Split('-');  
+        Type = parts[1];
+        
         if (containers.Type != "C")
         {
             Console.WriteLine("Rodzaj produktu nie odnosi się do zimnych produktów ");
             return;
         }
-    
+        string[] temperature = SerialNumber.Split(' ');  
         string[] food = new string[]
         {
             "Bananas 13.3°C",
@@ -129,6 +151,8 @@ public class Containers : IHazardNotifier
             "Eggs 19°C"
         };
 
+  
+        
         bool found = false;
 
         for (int i = 0; i < food.Length; i++)
@@ -146,15 +170,15 @@ public class Containers : IHazardNotifier
         }
         else
         {
-             
+            
             Console.WriteLine("Rodzaj produktu albo temperatura nie prawidłowa (" + containers.cargoType + ")");
+            containers.ClearContainer();
         }
     }
 
     public void ContainerInfo(Containers containers)
     {
-        Console.WriteLine("zajście niebezpieczne " + containers.SerialNumber + "-" + containers.Type + "-" +
-                          containers.NumberContainer);
+        Console.WriteLine("zajście niebezpieczne " + containers.SerialNumber);
     }
 
     public void Notify()

@@ -35,7 +35,7 @@ public class Ship
         }
 
         containers.Add(container);
-        Console.WriteLine("Kontener załadowany: " + container.SerialNumber + "-" + container.Type + "-" + container.NumberContainer );
+        Console.WriteLine("Kontener załadowany: " + container.SerialNumber  );
         return true;
     }
 
@@ -47,7 +47,7 @@ public class Ship
             return false;
         }
         containers.Remove(container);
-        Console.WriteLine("Kontener rozładowany: " + container.SerialNumber + "-" + container.Type + "-" + container.NumberContainer);
+        Console.WriteLine("Kontener rozładowany: " + container.SerialNumber );
         return true;
     }
         
@@ -81,7 +81,7 @@ public class Ship
         Console.WriteLine("\nLista kontenerów na statku:");
         foreach (Containers container in containers)
         {
-            Console.WriteLine($"- {container.SerialNumber} ({container.Type}) - {container.Kg} kg");
+            Console.WriteLine(container.SerialNumber +" " +container.Kg + "kg");
         }
     }
 }

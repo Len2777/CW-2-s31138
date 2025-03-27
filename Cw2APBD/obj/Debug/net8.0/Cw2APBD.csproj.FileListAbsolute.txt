@@ -12,3 +12,4 @@ C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\refint\Cw2APBD.dll
 C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.pdb
 C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.genruntimeconfig.cache
 C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\ref\Cw2APBD.dll
+C:\Users\maks1\RiderProjects\Cw2APBD\Cw2APBD\obj\Debug\net8.0\Cw2APBD.sourcelink.json
